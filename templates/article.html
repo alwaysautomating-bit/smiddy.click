@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Template — Article</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/doc.css">
+<script src="js/fit.js" defer></script>
+<style>
+  /* Article — one page, 250–450 words.
+     Structure: hook → everyday reality → what we can build →
+     same idea, different industry → takeaway → CTA. */
+  .article .kicker { margin-bottom: 14px; }
+  .article__title { font-size: 34px; font-weight: 800; line-height: 1.18; margin: 0 0 28px; max-width: 94%; }
+  .article__body { flex: 1; display: flex; flex-direction: column; gap: 13px; font-size: 13.5px; line-height: 1.6; color: var(--ink-28); }
+  .article__body p { margin: 0; }
+  .article__lead { font-weight: 700; margin-bottom: 4px !important; }
+  .article__h { font-size: 15px; font-weight: 700; margin-bottom: 4px !important; color: var(--ink); }
+  .article__body hr { border: none; border-top: 1px solid var(--rule); margin: 4px 0; }
+  .industries { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 28px; }
+  .article__close { font-weight: 700; }
+  .article__foot { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--rule); }
+  .article__cta { font-size: 14px; font-style: italic; color: var(--ink-24); margin: 0 0 12px; }
+  .article__foot .folio { border-top: none; padding-top: 0; }
+  @media print { details.hood:not([open]) { display: none; } }
+</style>
+</head>
+<body>
+<main class="doc">
+
+  <section class="page article">
+    <p class="kicker">What real AI enablement looks like. No. [001]</p>
+    <h1 class="article__title">[Headline stated as a plain observation about a familiar problem.]</h1>
+
+    <div class="article__body">
+      <!-- 1. The hook -->
+      <p>[The hook — one or two short paragraphs describing a familiar, slightly absurd business problem. Write it plainly, almost conversationally. End with a short rhetorical beat if it fits — "Sound familiar?"]</p>
+
+      <!-- 2. The everyday reality -->
+      <p>[The everyday reality — describe how people currently deal with this. Ground it in specifics: what someone actually does, step by step, when this happens.]</p>
+
+      <!-- 3. Here's what we can build -->
+      <p class="article__lead">Here's something we can actually build.</p>
+      <p>[Introduce one specific AI capability in plain English — no jargon, no architecture talk. What does the system notice, capture, or do? Two to three sentences, short lines are fine.]</p>
+
+      <hr>
+
+      <!-- 4. Same idea. Different industry. -->
+      <p class="article__h">Now imagine that in your industry.</p>
+      <div class="industries">
+        <p><strong>[Industry one]:</strong> [One to two sentences — a concrete example of the capability applied there.]</p>
+        <p><strong>[Industry two]:</strong> [One to two sentences — a concrete example of the capability applied there.]</p>
+        <p><strong>[Industry three]:</strong> [One to two sentences — a concrete example of the capability applied there.]</p>
+        <p><strong>[Industry four]:</strong> [One to two sentences — a concrete example of the capability applied there.]</p>
+      </div>
+
+      <hr>
+
+      <!-- 5. The takeaway -->
+      <p class="article__h">The bigger idea?</p>
+      <p>[One or two sentences reframing the specific example as a general possibility.]</p>
+      <p class="article__close">[One memorable closing sentence about what's possible.]</p>
+
+      <!-- Optional: engineering detail for readers who want it -->
+      <details class="hood">
+        <summary>Under the hood</summary>
+        <p>[Optional — the engineering detail for readers who want it: how the system actually detects and structures this information. Keep it short; this is a sidebar, not the main argument.]</p>
+      </details>
+    </div>
+
+    <div class="article__foot">
+      <p class="article__cta">"Got a version of this problem? Let's figure out what we can build."</p>
+      <div class="folio">
+        <p class="folio__name">[Company Name]</p>
+        <p class="folio__num">[Practical AI, built for the way people actually work.]</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

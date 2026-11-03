@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Template — Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/doc.css">
+<script src="js/fit.js" defer></script>
+<style>
+  /* Case Study — 5 pages: cover, challenge, approach, results, takeaways. */
+  .cover .kicker { margin-bottom: 18px; }
+  .team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 24px; border-top: 1px solid var(--rule); }
+  .team .value { font-size: 12.5px; font-weight: 400; }
+</style>
+</head>
+<body>
+<main class="doc">
+
+  <!-- 01 / 05 — Cover -->
+  <section class="page cover">
+    <p class="kicker">Case Study</p>
+    <h1 class="cover-title">[Project Name]</h1>
+    <p class="cover-sub">[Client / Team]</p>
+    <hr class="rule">
+    <p class="cover-intro">[Intro paragraph — 2–3 sentences. State the problem, the approach taken, and the headline result. Most readers will only see this.]</p>
+    <hr class="rule">
+    <div class="meta">
+      <div class="meta__facts">
+        <div><p class="label">Sector</p><p class="value">[Industry]</p></div>
+        <div><p class="label">Timeline</p><p class="value">[X weeks]</p></div>
+        <div><p class="label">Role</p><p class="value">[Role]</p></div>
+        <div><p class="label">Tools</p><p class="value">[Tools]</p></div>
+      </div>
+      <p class="context">[Supporting context — team composition, constraints, or scope boundaries. 2–4 sentences.]</p>
+    </div>
+    <div class="folio push">
+      <p class="folio__name">Case Study</p>
+      <p class="folio__num">[CS-000] · 01 / 05</p>
+    </div>
+  </section>
+
+  <!-- 02 / 05 — The Challenge (text + pull quote) -->
+  <section class="page">
+    <p class="kicker">01 — The Challenge</p>
+    <h2 class="h2">[Problem statement, stated in one line]</h2>
+    <p class="p">[Two to three sentences establishing context: who faced this problem, and why it mattered now. Keep it concrete — numbers, dates, named constraints.]</p>
+    <p class="p" style="margin-bottom:32px">[A second paragraph on the constraints — budget, timeline, legacy systems, or stakeholders that shaped what was possible.]</p>
+    <div class="pullquote">
+      <p>"[Pull quote — a stakeholder statement or key insight, one or two sentences.]"</p>
+      <p>[Name, Title]</p>
+    </div>
+    <div class="folio push">
+      <p class="folio__name">Case Study</p>
+      <p class="folio__num">[CS-000] · 02 / 05</p>
+    </div>
+  </section>
+
+  <!-- 03 / 05 — The Approach (text + image) -->
+  <section class="page">
+    <p class="kicker">02 — The Approach</p>
+    <h2 class="h2">[What you built or changed]</h2>
+    <div class="split">
+      <div>
+        <p class="p" style="margin-bottom:16px">[Describe the approach — what changed, in what order, and why this path over the alternatives.]</p>
+        <p class="p">[Mention anything that made this harder or easier than expected.]</p>
+      </div>
+      <figure class="figure" style="margin:0">
+        <!-- Replace the placeholder with <img src="…" alt="…"> -->
+        <div class="figure__box"><p class="figure__ph">[ screenshot / prototype view ]</p></div>
+        <figcaption class="figure__cap">Figure 1 — [caption describing what's shown]</figcaption>
+      </figure>
+    </div>
+    <div class="folio">
+      <p class="folio__name">Case Study</p>
+      <p class="folio__num">[CS-000] · 03 / 05</p>
+    </div>
+  </section>
+
+  <!-- 04 / 05 — Results (stats + table) -->
+  <section class="page">
+    <p class="kicker">03 — Results</p>
+    <h2 class="h2" style="margin-bottom:32px">[Outcome, in numbers]</h2>
+    <div class="stats">
+      <div><p class="stat__num">[+42%]</p><p class="stat__name">[Metric name]</p></div>
+      <div><p class="stat__num">[3.1×]</p><p class="stat__name">[Metric name]</p></div>
+      <div><p class="stat__num">[−18hrs]</p><p class="stat__name">[Metric name]</p></div>
+    </div>
+    <table class="table">
+      <thead><tr><th>Metric</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td>[Metric A]</td><td>[value]</td><td>[value]</td></tr>
+        <tr><td>[Metric B]</td><td>[value]</td><td>[value]</td></tr>
+        <tr><td>[Metric C]</td><td>[value]</td><td>[value]</td></tr>
+      </tbody>
+    </table>
+    <div class="folio push">
+      <p class="folio__name">Case Study</p>
+      <p class="folio__num">[CS-000] · 04 / 05</p>
+    </div>
+  </section>
+
+  <!-- 05 / 05 — Takeaways (text only) -->
+  <section class="page">
+    <p class="kicker">04 — Takeaways</p>
+    <h2 class="h2">[What this proves, and what's next]</h2>
+    <p class="p">[Close with the broader point — what this work demonstrates beyond the specific result.]</p>
+    <p class="p" style="margin-bottom:40px">[Note any follow-on work, open questions, or next steps.]</p>
+    <div class="team push">
+      <div><p class="label">Team</p><p class="value">[Names]</p></div>
+      <div><p class="label">Partners</p><p class="value">[Names]</p></div>
+      <div><p class="label">Completed</p><p class="value">[Month, Year]</p></div>
+    </div>
+    <div class="folio" style="margin-top:16px">
+      <p class="folio__name">Case Study</p>
+      <p class="folio__num">[CS-000] · 05 / 05</p>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

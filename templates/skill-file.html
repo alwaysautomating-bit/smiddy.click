@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Template — Skill File</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/doc.css">
+<script src="js/fit.js" defer></script>
+<style>
+  /* Skill File — a one-page card. A pointer to the skill, not its full instructions. */
+  .skill__title, .skill__sub { font-size: 52px; line-height: 1.08; margin: 0; }
+  .skill__title { font-weight: 800; }
+  .skill__sub { font-weight: 400; margin-top: 2px; color: var(--ink-32); }
+  .skill__desc { font-size: 19px; line-height: 1.55; color: var(--ink-28); margin: 0; max-width: 90%; }
+  .skill .rule { margin: 0 0 28px; }
+  .skill .rule--top { margin-bottom: 32px; }
+  .spacer { flex: 1; min-height: 40px; }
+  .spacer--sm { min-height: 20px; }
+  .facts { display: flex; flex-direction: column; gap: 18px; }
+  .skill__long { font-size: 13px; line-height: 1.65; color: var(--ink-38); margin: 0; }
+</style>
+</head>
+<body>
+<main class="doc">
+
+  <section class="page skill">
+    <hr class="rule rule--top">
+    <h1 class="skill__title">[Skill Name]</h1>
+    <p class="skill__sub">Skill File</p>
+    <div class="spacer"></div>
+
+    <hr class="rule">
+    <p class="skill__desc">[One paragraph describing what this skill does and when it activates — written plainly, as if explaining it to someone skimming a shelf of skills.]</p>
+    <div class="spacer"></div>
+
+    <hr class="rule">
+    <div class="meta">
+      <div class="facts">
+        <div><p class="label">Trigger</p><p class="value">[When this fires]</p></div>
+        <div><p class="label">Inputs</p><p class="value">[What it reads]</p></div>
+        <div><p class="label">Outputs</p><p class="value">[What it produces]</p></div>
+        <div><p class="label">Dependencies</p><p class="value">[Other skills or tools it relies on]</p></div>
+      </div>
+      <p class="skill__long">[Longer description — the reasoning behind the skill, constraints it respects, and an example of when it would and wouldn't fire. Keep it to a short paragraph; this card is a pointer, not the full instructions.]</p>
+    </div>
+    <div class="spacer spacer--sm"></div>
+
+    <div class="folio">
+      <p class="folio__name">Skill File</p>
+      <p class="folio__num">[skill-id]</p>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
