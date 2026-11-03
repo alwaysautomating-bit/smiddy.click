@@ -1,6 +1,6 @@
 # Blue Dot Technology — implementation
 
-Static HTML/CSS built from the Claude Design export in `project/`. Nothing to build or install: open the files directly or serve the folder with any static host.
+Static HTML/CSS built from the Claude Design export. Nothing to build or install: open the files directly or serve the folder with any static host.
 
 ```
 site/                      Marketing site
