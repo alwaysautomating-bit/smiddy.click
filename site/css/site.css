@@ -450,12 +450,21 @@ a:hover { color: var(--link-hover); }
   text-align: center;
   padding: 0 var(--gutter);
   margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(28px, 4vw, 48px);
-  font-weight: 400;
+  flex-direction: column;
+  gap: 18px;
   color: #fff;
   background: oklch(15% 0.01 260 / 0.3);
   pointer-events: none;
+}
+.band__line p { margin: 0; font-family: var(--serif); font-size: clamp(28px, 4vw, 48px); font-weight: 400; }
+.band__line .band__stamp {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  padding: 8px 14px;
+  border: 1px solid oklch(100% 0 0 / 0.7);
+  white-space: nowrap;
 }
 
 /* ---------- Shared sections ---------- */
@@ -547,6 +556,10 @@ a:hover { color: var(--link-hover); }
   .thesis__inner { padding-top: 72px; padding-bottom: 80px; }
   .thesis__nots { grid-template-columns: 1fr; gap: 0; }
   .thesis__nots li { padding: 14px 0; }
+  .hero__sep { display: none; }
+  .hero__city { display: block; margin-top: 10px; }
+  .hero__sub::before { display: none; }
+  .band__line .band__stamp { font-size: 11px; letter-spacing: 0.14em; }
   .what__lede { font-size: 24px; }
   .intro { padding-top: 64px; padding-bottom: 56px; }
   .band { height: 360px; }
