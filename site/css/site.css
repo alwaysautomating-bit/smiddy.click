@@ -421,7 +421,16 @@ a:hover { color: var(--link-hover); }
 .why { padding-top: 70px; padding-bottom: 110px; }
 .band { position: relative; height: 560px; }
 .band--founder { height: 480px; }
-.beginner { padding-top: 90px; }
+.beginner { padding-top: 110px; }
+.opener {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 30px;
+  line-height: 1.35;
+  color: var(--ink-850);
+  margin: 0 0 56px;
+  max-width: 22ch;
+}
 
 .cta { padding: 90px var(--gutter); max-width: 720px; margin: 0 auto; text-align: center; box-sizing: content-box; }
 .cta__line {
@@ -493,6 +502,7 @@ a:hover { color: var(--link-hover); }
   .columns, .figures { grid-template-columns: 1fr; gap: 18px; }
   .statement { font-size: 21px; }
   .what { padding-top: 80px; }
+  .opener { font-size: 25px; margin-bottom: 40px; }
   .what__lede { font-size: 24px; }
   .intro { padding-top: 64px; padding-bottom: 56px; }
   .band { height: 360px; }
