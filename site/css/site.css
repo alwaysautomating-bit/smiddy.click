@@ -31,6 +31,11 @@
   --hero-tint:    oklch(28% 0.07 255 / 0.5);
   --hero-caption: oklch(95% 0.01 255);
 
+  --thesis-bg:    oklch(28% 0.035 255);
+  --thesis-ink:   oklch(95% 0.006 255);
+  --thesis-muted: oklch(78% 0.02 255);
+  --thesis-rule:  oklch(45% 0.03 255);
+
   --sans:  'Archivo', system-ui, sans-serif;
   --serif: 'Source Serif 4', Georgia, serif;
 
@@ -346,6 +351,42 @@ a:hover { color: var(--link-hover); }
   .hero__scroll span { animation: none; }
 }
 
+/* ---------- Landing: thesis (bold condensed register) ----------
+   The campaign voice, used once on the site: dark band, Archivo at its
+   narrowest width, set heavy and in caps. Contrast with the editorial
+   serif is deliberate. */
+.thesis { background: var(--thesis-bg); color: var(--thesis-ink); }
+.thesis__inner { max-width: 980px; margin: 0 auto; padding: 96px var(--gutter) 104px; box-sizing: content-box; }
+.eyebrow--light { color: var(--thesis-muted); margin-bottom: 18px; }
+.thesis__title {
+  font-family: var(--sans);
+  font-stretch: 62%;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(48px, 7vw, 84px);
+  line-height: 0.98;
+  letter-spacing: 0.005em;
+  margin: 0 0 52px;
+  max-width: 7.6em;
+}
+.thesis__nots {
+  list-style: none;
+  margin: 0 0 44px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.thesis__nots li {
+  font-size: 17px;
+  line-height: 1.55;
+  padding-top: 16px;
+  border-top: 1px solid var(--thesis-rule);
+}
+.thesis__body { max-width: 640px; }
+.thesis__body p { font-size: 17px; line-height: 1.75; margin: 0 0 14px; color: var(--thesis-ink); }
+.thesis__body p:last-child { margin-bottom: 0; }
+
 /* ---------- Landing: story sections ---------- */
 .story { padding-top: 70px; padding-bottom: 90px; }
 .story--tight { padding-top: 0; }
@@ -503,6 +544,9 @@ a:hover { color: var(--link-hover); }
   .statement { font-size: 21px; }
   .what { padding-top: 80px; }
   .opener { font-size: 25px; margin-bottom: 40px; }
+  .thesis__inner { padding-top: 72px; padding-bottom: 80px; }
+  .thesis__nots { grid-template-columns: 1fr; gap: 0; }
+  .thesis__nots li { padding: 14px 0; }
   .what__lede { font-size: 24px; }
   .intro { padding-top: 64px; padding-bottom: 56px; }
   .band { height: 360px; }
