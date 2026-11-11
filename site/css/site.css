@@ -581,7 +581,8 @@ a:hover { color: var(--link-hover); }
 
 /* Left-aligned copy over the photographs */
 .hero__content { align-items: flex-start; text-align: left; padding: 0 var(--gutter); }
-.hero__content .hero__title { max-width: 14ch; }
+.hero__content .hero__title { max-width: none; font-size: min(70px, 7.4vw); }
+.hero__title span { display: block; white-space: nowrap; }
 .band__line { align-items: flex-start; text-align: left; }
 .band--closing .band__line { background: linear-gradient(90deg, rgb(14 12 11 / 0.66) 0%, rgb(14 12 11 / 0.42) 55%, rgb(14 12 11 / 0.22) 100%); }
 
@@ -733,6 +734,11 @@ a:hover { color: var(--link-hover); }
 .sources ol { margin: 0; padding-left: 18px; font-size: 13.5px; line-height: 1.8; color: var(--ink-600); }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 400px) {
+  .nav { padding-left: 12px; padding-right: 6px; }
+  .logo { width: 30px; height: 30px; }
+  .nav__links a { padding: 8px 4px !important; font-size: 11px !important; letter-spacing: 0.05em !important; }
+}
 @media (max-width: 860px) {
   .thesis__lower, .teaser { grid-template-columns: 1fr; gap: 36px; }
 }
