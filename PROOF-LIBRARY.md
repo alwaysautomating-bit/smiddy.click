@@ -61,6 +61,20 @@ Rules:
 - **Publication edits:** bank name replaced with "Example Bank, N.A."; onboarding link replaced with `example.com/vendor-intake/demo` (disclosed on the page). Captures showing full account numbers or an error toast are excluded.
 - **Source:** ICARUS `docs/demo/vendor-onboarding/`.
 
+### CMMC Controls Generator
+
+- **Public page:** `site/work/cmmc-controls.html` · homepage card
+- **Capability:** control-driven compliance documents: one control record generates the policy, procedure, evidence plan and assessment prep (interview, examine, observe), specific to the company's own systems. Helps small contractors prepare before a paid assessment.
+- **Status:** Working build · Illustrative data · Standalone app (not part of ICARUS)
+- **Built:** onboarding with environment inference; overview, policy, procedure, technical, evidence, validation and assessment views projected from canonical control records; implementation-profile swap (Entra ID / Okta) that rewrites every output; generated policy manual outlines; Express + React app; 19 architecture tests passing (verified 2026-11-11).
+- **Not yet:** three controls modelled end to end (AC.L2-3.1.1, AC.L2-3.1.2, AU.L2-3.3.1); a catalog file lists 99 of the 110 control IDs but isn't wired into the UI; evidence connectors are simulated, no live ingestion; AI assist endpoints exist but were not used in any published capture.
+- **How outputs are made:** deterministic projection functions (`src/domain/controlProjections.ts`) read the control record; implementation-profile mappings (`src/domain/implementationProfiles.ts`) substitute the company's systems, evidence sources and owners. No AI in the generation path; say "assembled from control records and system mappings", not "AI-generated".
+- **Evolution path shown on the page:** control requirement (built) → company configuration (built) → implementation guidance (built) → evidence collection (partly built: requirements defined, live collection planned) → verification (planned) → readiness status (planned).
+- **Wording:** never "compliant" or "certified". It is preparation and evidence for an assessment, not a certification or a substitute for an authorized assessor.
+- **Naming note:** the repo's positioning doc calls the product "Icarus". The site uses "CMMC Controls Generator" to avoid confusion with the ICARUS operations platform.
+- **Source:** `alwaysautomating-bit/cmmc-level-2-compliance-engine` at 7a3e012, captured with Playwright against a local run (no Gemini key; no AI calls fired in captured views).
+- **Media:** `site/work/media/cmmc-*.webp`, `card-cmmc.webp`.
+
 ### Field capture
 
 - **Public mention:** homepage, "Also on the bench" (no demo page yet)
