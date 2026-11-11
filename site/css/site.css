@@ -868,3 +868,12 @@ a:hover { color: var(--link-hover); }
   .work-head { padding-top: 56px; }
   .exhibit__stage { padding: 24px 16px; min-height: 0; }
 }
+
+/* What this proves: capability, status, limits on each demo page */
+.work-proof { padding-top: 24px; padding-bottom: 8px; }
+.work-proof__cap { font-family: var(--serif); font-size: 24px; line-height: 1.35; color: var(--ink-850); margin: 0 0 22px; max-width: 820px; }
+.work-proof__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; border-top: 1px solid var(--rule); }
+.work-proof__h { font-stretch: 75%; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-500); margin: 16px 0 6px; }
+.work-proof ul { margin: 0; padding-left: 18px; }
+.work-proof li { font-size: 15px; line-height: 1.6; color: var(--ink-600); margin-bottom: 8px; }
+@media (max-width: 720px) { .work-proof__cols { grid-template-columns: 1fr; } }
