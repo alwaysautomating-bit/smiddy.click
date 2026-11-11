@@ -14,9 +14,11 @@ Use these terms exactly, on the site and everywhere else.
 
 | Status | Means | Bar to claim it |
 |---|---|---|
-| **Working build** | The real software in ICARUS, running on test data | Code, routes and tests exist in ICARUS; screens are captures of it running |
-| **Working demo** | Runs on its own, on sample data | A visitor (or a walkthrough) can see it do the thing end to end, with no hidden dependency |
-| **Prototype** | Early or partial; not a finished capability | Anything that doesn't meet the bar above, including tools that work only in a private environment |
+| **Working build** | Front end and back end built, MVP or further, running on test data | The capability runs end to end in the real software; captures or a walkthrough show it |
+| **Working demo** | A public version anyone can open and try | A visitor can do the thing end to end on the public web, with no hidden dependency |
+| **Prototype** | Early or partial; not a finished capability | Anything short of a working build |
+
+Status is about how far the build has got. Whether a visitor can see it is recorded separately, under "Public availability".
 
 Data labels: **Illustrative** (seeded demonstration data) or **Synthetic** (generated test data only).
 
@@ -65,23 +67,23 @@ Rules:
 - **Capability:** people away from a desk send photos, notes, delivery proof and inspection records from a phone via QR code or guest link, with no app or login; submissions are reviewed before they become evidence.
 - **Status:** Working build · no public media yet
 - **Built (ICARUS):** QR submit tokens (create, revoke, validate), guest capture sessions, evidence types, pending-submission review, assignment candidates (`server/ops/src/routes/qrCapture.ts`, `guestCapture.ts`, `evidence.ts`; `services/assignments.ts`).
-- **Not yet:** not every integration is production-ready; no public capture or walkthrough yet. Earlier copy about reconciling against schedule and change orders was removed until verified.
+- **Not yet:** not every integration is production-ready; no public demo yet (walkthrough on request). Earlier copy about reconciling against schedule and change orders was removed until verified.
 
 ### Discovery Flow
 
 - **Public mention:** homepage, "Also on the bench"
 - **Capability:** sorts a company's workflows by what each one needs: an AI assistant, plain automation, a process fix, an engineering handoff, or nothing.
-- **Status:** Working demo · Synthetic data
-- **Verified 2026-11-11:** the standalone page loads and runs with no errors, with no network or model calls.
-- **Not yet public:** the current build carries employer-specific branding and domain; it needs a neutral version before it can be linked from the site.
+- **Status:** Working build (front end and back end at MVP or further, per owner, 2026-11-11) · Synthetic data
+- **Verified here:** the standalone front end loads and runs with no errors. Back-end source is not in this repo; link it here when it is referenced.
+- **Public availability:** walkthrough on request. The current build carries employer-specific branding and domain; it needs a neutral version before it becomes a public working demo.
 
 ### Draft-and-review assistant
 
 - **Public mention:** homepage, "Also on the bench"
 - **Capability:** turns messy intake notes into a first draft, quotes the notes it relied on, flags what's missing, and waits for a specialist to approve; ships with an eval set that reports failures.
-- **Status:** Prototype (downgraded from Working demo on 2026-11-11)
-- **Why:** live drafting runs only inside a private environment that supplies the model. On the public web a visitor can't see a functioning draft; only the rule-based eval check runs. It also carries employer-specific branding.
-- **To earn "Working demo":** neutral branding plus either a small server for live drafting or precomputed drafts with their source references and review states.
+- **Status:** Working build (front end and back end at MVP or further, per owner, 2026-11-11)
+- **Verified here:** the standalone front end loads; its rule-based eval check runs offline. Live drafting needs the model back end, so the standalone file alone can't draft on the public web.
+- **Public availability:** walkthrough on request. To become a public working demo: neutral branding, plus a hosted back end for live drafting or saved example drafts with their source references and review states.
 
 ## Adding an entry
 
