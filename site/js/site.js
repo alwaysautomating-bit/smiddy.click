@@ -18,3 +18,16 @@
   }, { threshold: 0.15 });
   els.forEach(function (el) { io.observe(el); });
 })();
+
+// Email links are assembled in the browser so the address never appears
+// in the page source for scrapers. Without JavaScript, links fall back to
+// the contact section and the address shows as "name [at] domain [dot] com".
+(function () {
+  var user = 'bluedottechnology', host = 'outlook' + '.' + 'com';
+  var addr = user + '@' + host;
+  document.querySelectorAll('a[data-mail]').forEach(function (a) {
+    var subject = a.getAttribute('data-mail');
+    a.href = 'mailto:' + addr + (subject ? '?subject=' + subject : '');
+    if (/\[at\]/.test(a.textContent)) a.textContent = addr;
+  });
+})();

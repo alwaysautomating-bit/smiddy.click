@@ -1,0 +1,30 @@
+# Blue Dot Technology
+
+> Practical AI, automation and custom software for operations teams, built, based and serviced in Dallas, Texas. Founded by an operator turned builder. Outcome-focused: no rip-and-replace, no single magic product; the goal is the business running better.
+
+Blue Dot helps small and mid-sized businesses fix operational problems: invoices, approvals, reporting, vendor and payment controls, procurement records, field capture and compliance preparation. Work is delivered as fixed-scope sessions and sprints or ongoing fractional help. Demos run on illustrative or synthetic data; client work stays private.
+
+## Services
+
+- [AI Opportunity Session](https://smiddy.click/#how): fixed $995. The top three opportunities, ranked and written up within 48 hours.
+- [Workflow Sprint](https://smiddy.click/#how): from $4,500, fixed. One workflow fixed in two to four weeks and handed over running.
+- [Fractional AI Implementation Lead](https://smiddy.click/#how): from $5,000 a month. A day a week of hands-on help without a full-time hire.
+
+## Working builds (demos)
+
+- [Traceable Metrics](https://smiddy.click/work/traceable-metrics.html): construction cost dashboard where every number opens to its records, approvals, documents and timing. Built in ICARUS, Blue Dot's operational software platform.
+- [Traceable Procurement](https://smiddy.click/work/traceable-procurement.html): purchase orders traced from the original need to the final payment, including why a vendor was selected. Built in ICARUS.
+- [Vendor Onboarding & Payment Controls](https://smiddy.click/work/vendor-onboarding.html): vendors can be set up immediately; payment stays locked until bank details are verified by phone. Built in ICARUS.
+- [CMMC Controls Generator](https://smiddy.click/work/cmmc-controls.html): helps small defense contractors prepare for a CMMC Level 2 assessment with system-specific policy, procedure, evidence and assessor-prep documents. Preparation only; not a certification.
+
+Each demo page lists what is built and what is not yet.
+
+## About
+
+- [Approach](https://smiddy.click/approach.html): how Blue Dot works and what it is not.
+- [The founder journey](https://smiddy.click/founder.html): from wealth management and accounting operations to building the tools.
+- [Journal](https://smiddy.click/journal/index.html): The Texas Address, essays on Texas technology history and practical AI.
+
+## Contact
+
+Use the contact section on any page: https://smiddy.click/#contact. Walkthroughs on a screen share or in person in Dallas.

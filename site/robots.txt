@@ -1,0 +1,5 @@
+# Blue Dot Technology: search engines and AI assistants are welcome.
+User-agent: *
+Allow: /
+
+Sitemap: https://smiddy.click/sitemap.xml
