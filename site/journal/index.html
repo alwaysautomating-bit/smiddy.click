@@ -43,7 +43,47 @@
     <p class="journal-intro">Stories about how work gets done in Texas, and how it gets better.</p>
   </header>
 
-  <section class="wrap wrap--wide" aria-label="Stories">
+  <section id="build-notes" class="wrap wrap--wide notes" aria-labelledby="notes-title">
+    <p class="eyebrow">BUILD NOTES</p>
+    <h2 id="notes-title" class="section-title">How the tools get built, one decision at a time.</h2>
+    <div class="notes__intro">
+      <p>You've probably been promised a lot by software that didn't deliver. These notes skip the promises. Each one takes a single decision from a build that runs, explains it in plain language, and links to the working demo so you can check.</p>
+      <p>I started building with a small invoice parser, mostly to learn how the pieces fit together. These notes are what I've learned since.</p>
+    </div>
+    <ol class="notes__list">
+      <li>
+        <a class="note-row" href="approved-is-not-payable.html">
+          <span class="note-row__no">No. 01</span>
+          <span class="note-row__main"><span class="note-row__title">Approved isn&#x27;t the same as payable.</span><span class="note-row__dek">In a lot of finance teams, a signed purchase order quietly becomes permission to pay. In the procurement build, those are two different questions with two different answers.</span></span>
+          <span class="note-row__from">TRACEABLE PROCUREMENT</span>
+        </a>
+      </li>
+      <li>
+        <a class="note-row" href="gaps-are-stated-not-filled.html">
+          <span class="note-row__no">No. 02</span>
+          <span class="note-row__main"><span class="note-row__title">Gaps are stated, not filled.</span><span class="note-row__dek">A report that always looks complete is hiding something. In the traceable-metrics build, a missing approval shows up as a missing approval.</span></span>
+          <span class="note-row__from">TRACEABLE METRICS</span>
+        </a>
+      </li>
+      <li>
+        <a class="note-row" href="the-warning-before-the-call.html">
+          <span class="note-row__no">No. 03</span>
+          <span class="note-row__main"><span class="note-row__title">Why the warning comes before the phone call.</span><span class="note-row__dek">The best control against payment fraud is a phone call. The build makes sure it&#x27;s the right phone call.</span></span>
+          <span class="note-row__from">VENDOR ONBOARDING &amp; PAYMENT CONTROLS</span>
+        </a>
+      </li>
+      <li>
+        <a class="note-row" href="no-ai-writes-these-documents.html">
+          <span class="note-row__no">No. 04</span>
+          <span class="note-row__main"><span class="note-row__title">No AI writes these documents.</span><span class="note-row__dek">For compliance paperwork, producing the same answer twice matters more than sounding good once.</span></span>
+          <span class="note-row__from">CMMC CONTROLS GENERATOR</span>
+        </a>
+      </li>
+    </ol>
+  </section>
+
+  <section class="wrap wrap--wide" aria-label="The Texas Address">
+    <p class="eyebrow">THE TEXAS ADDRESS</p>
     <ul class="journal-list">
       <li>
         <a class="teaser" href="the-chip-was-born-here.html">
