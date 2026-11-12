@@ -1202,3 +1202,31 @@ h1, h2, h3, .section-title, .what__lede, .cta__line { text-wrap: balance; }
   .plate--shot-small figcaption { margin: 0 -18px; padding: 14px 18px 0; }
 }
 .article-title--note { max-width: 18ch; margin-left: auto; margin-right: auto; text-wrap: balance; }
+
+/* =====================================================================
+   Performance pass: snappier on large screens
+   - Solid nav: no backdrop blur repainting on every scroll frame.
+   - Hero settles in ~0.6s; no full-screen photo zoom.
+   - Shorter, subtler reveals; content already on screen shows instantly.
+   ===================================================================== */
+.nav { background: var(--nav-bg); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.js .hero .photo img, .js.is-ready .hero .photo img { transform: none; transition: none; }
+.js .hero__title span, .js .hero__sub, .js .hero__caption, .js .hero__scroll {
+  transform: translateY(10px);
+  transition: opacity 0.5s var(--ease), transform 0.6s var(--ease);
+}
+.js.is-ready .hero__title span:nth-child(1) { transition-delay: 0.04s; }
+.js.is-ready .hero__title span:nth-child(2) { transition-delay: 0.1s; }
+.js.is-ready .hero__title span:nth-child(3) { transition-delay: 0.16s; }
+.js.is-ready .hero__sub { transition-delay: 0.26s; }
+.js.is-ready .hero__caption, .js.is-ready .hero__scroll { transition-delay: 0.34s; }
+.js .reveal { transform: translateY(10px); transition: opacity 0.5s var(--ease), transform 0.55s var(--ease); }
+.js .reveal-item { transform: translateY(10px); transition: opacity 0.45s var(--ease), transform 0.5s var(--ease); transition-delay: calc(var(--i, 0) * 50ms); }
+.js .reveal.instant, .js .reveal-item.instant { transition: none !important; }
+.demo__screen img, .step__screen img, .svc-demo__screen img { transition-duration: 0.6s; }
+.js .hero__title span, .js .hero__sub, .js .hero__caption, .js .hero__scroll { transition: opacity 0.45s var(--ease), transform 0.5s var(--ease); }
+.js.is-ready .hero__title span:nth-child(1) { transition-delay: 0s; }
+.js.is-ready .hero__title span:nth-child(2) { transition-delay: 0.06s; }
+.js.is-ready .hero__title span:nth-child(3) { transition-delay: 0.12s; }
+.js.is-ready .hero__sub { transition-delay: 0.2s; }
+.js.is-ready .hero__caption, .js.is-ready .hero__scroll { transition-delay: 0.26s; }

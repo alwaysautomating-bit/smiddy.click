@@ -32,6 +32,13 @@
     els.forEach(function (el) { el.classList.add('is-visible'); });
     return;
   }
+  // Anything already on screen at load appears immediately, with no fade.
+  var vh = window.innerHeight;
+  els = Array.prototype.filter.call(els, function (el) {
+    var r = el.getBoundingClientRect();
+    if (r.top < vh && r.bottom > 0) { el.classList.add('is-visible', 'instant'); return false; }
+    return true;
+  });
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (e.isIntersecting) {
@@ -39,7 +46,7 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -4% 0px' });
   els.forEach(function (el) { io.observe(el); });
 })();
 
