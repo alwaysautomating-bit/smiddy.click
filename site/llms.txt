@@ -1,16 +1,18 @@
 # Blue Dot Technology
 
-> Practical AI, automation and custom software for operations teams, built, based and serviced in Dallas, Texas. Founded by an operator turned builder. Outcome-focused: no rip-and-replace, no single magic product; the goal is the business running better.
+> AI implementation for operations: practical AI, automation and custom software that does the work inside existing processes, rather than more reports, dashboards or chatbots. Built, based and serviced in Dallas, Texas. Founded by an operator turned builder. Outcome-focused: no rip-and-replace, no single magic product; the goal is the business running better.
 
 Blue Dot helps small and mid-sized businesses fix operational problems: invoices, approvals, reporting, vendor and payment controls, procurement records, field capture and compliance preparation. Work is delivered as fixed-scope sessions and sprints or ongoing fractional help. Demos run on illustrative or synthetic data; client work stays private.
 
 ## Services
 
+Full pricing, terms and FAQ: https://smiddy.click/services/
+
 Prices are published. Scope and timing are stated up front, and clients can stop after any step.
 
-- [AI Opportunity Session](https://smiddy.click/#how): $995, fixed. One working session to find where AI saves the most time. You get your top three quick wins, ranked, and a short written summary within 48 hours. The fee is credited toward any Sprint booked within 30 days.
-- [Workflow Sprint](https://smiddy.click/#how): from $4,500, fixed. Quick-Win Sprint, $4,500, about 2 weeks: a working prototype you can test plus a handoff session. Workflow Implementation Sprint, $8,500, 3 to 4 weeks: a multi-step workflow with integrations, tested and shipped. Larger scopes are quoted separately.
-- [Fractional AI Implementation Lead](https://smiddy.click/#how): $5,000 a month, about one day a week embedded with the team; includes a quarterly AI policy review. 3-month minimum, then 30 days' notice. AI tool fees are paid directly to vendors.
+- [AI Opportunity Session](https://smiddy.click/services/ai-opportunity-session.html): $995, fixed. One working session to find where AI saves the most time. You get your top three quick wins, ranked, and a short written summary within 48 hours. The fee is credited toward any Sprint booked within 30 days.
+- [Workflow Sprint](https://smiddy.click/services/workflow-sprint.html): from $4,500, fixed. Quick-Win Sprint, $4,500, about 2 weeks: a working prototype you can test plus a handoff session. Workflow Implementation Sprint, $8,500, 3 to 4 weeks: a multi-step workflow with integrations, tested and shipped. Larger scopes are quoted separately.
+- [Fractional AI Implementation Lead](https://smiddy.click/services/ai-implementation-lead.html): $5,000 a month, about one day a week embedded with the team; includes a quarterly AI policy review. 3-month minimum, then 30 days' notice. AI tool fees are paid directly to vendors.
 - [Other engagements](https://smiddy.click/approach.html#other): AI Use Policy Pack ($1,500, fixed), Fractional AI Officer, and an Enterprise AI Roadmap.
 
 ## Working builds (demos)
