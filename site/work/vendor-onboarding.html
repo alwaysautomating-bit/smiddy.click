@@ -40,15 +40,63 @@
   <header class="work-head wrap wrap--wide">
     <p class="eyebrow"><a href="../index.html#built">BUILT &amp; BUILDING</a> / 03</p>
     <h1 class="work-head__title">Vendor Onboarding &amp; Payment Controls</h1>
-    <p class="work-head__lede">Start working with a new vendor the day their name shows up. Pay them only after someone has called a number they found independently and confirmed the bank details. The software holds the line so a busy person doesn't have to.</p>
+    <p class="work-head__lede">Start working with a new vendor the day their name shows up. The system collects the bank details, locks them away, watches for changes and holds every payment until the details are confirmed. Your team only steps in for the decisions that move money.</p>
     <dl class="work-meta"><div><dt>STATUS</dt><dd>Working build</dd></div><div><dt>DATA</dt><dd>Synthetic</dd></div><div><dt>INDUSTRY</dt><dd>Finance &amp; AP</dd></div><div><dt>BUILT IN</dt><dd>ICARUS</dd></div></dl>
   </header>
   <figure class="work-hero wrap wrap--wide">
     <div class="work-hero__stage"><img src="media/vo-card-verified.webp" alt="The Locked Payment Path card, verified, with masked routing and account numbers" width="760" height="466"></div>
   </figure>
+  <section class="flow wrap wrap--wide" aria-label="How a payment gets cleared">
+    <h2 class="eyebrow">HOW A PAYMENT GETS CLEARED</h2>
+    <ol class="flow__steps">
+      <li class="flow__step"><span class="flow__who">SYSTEM</span><span class="flow__name">Vendor enters their details once</span><span class="flow__text">Through a single-use link. Nobody re-types bank details from an email or a PDF.</span></li>
+      <li class="flow__step"><span class="flow__who">SYSTEM</span><span class="flow__name">Details are encrypted and locked away</span><span class="flow__text">In the payment vault, apart from everyday vendor records. Everyone else sees the last four digits.</span></li>
+      <li class="flow__step"><span class="flow__who">SYSTEM</span><span class="flow__name">Payment is held</span><span class="flow__text">Every payment checks the same rules. Anything missing, and the money doesn't move.</span></li>
+      <li class="flow__step flow__step--you"><span class="flow__who">YOUR TEAM</span><span class="flow__name">One verification call</span><span class="flow__text">To a number found independently, logged with who confirmed what, and when.</span></li>
+      <li class="flow__step"><span class="flow__who">SYSTEM</span><span class="flow__name">Cleared, and watched</span><span class="flow__text">If the bank details ever change, payment locks again until the new details are confirmed.</span></li>
+    </ol>
+  </section>
+
+  <section class="duties wrap wrap--wide" aria-label="Who does what">
+    <h2 class="section-title">People make the calls that move money. The system does the rest.</h2>
+    <div class="duties__cols">
+      <div class="duties__col duties__col--system">
+        <p class="duties__h">THE SYSTEM HANDLES</p>
+        <ul>
+          <li><strong>Collecting the details.</strong> The vendor fills in their own form, once. No copying from one system to another.</li>
+          <li><strong>Storing them safely.</strong> Bank details are encrypted the moment they arrive and kept apart from everyday vendor records.</li>
+          <li><strong>Catching changes.</strong> Any change to bank details becomes a new version and locks payment again until it's confirmed. The old version is kept, never overwritten.</li>
+          <li><strong>Holding payment.</strong> Onboarding complete, current bank details confirmed, required documents in. If any one is missing, payment doesn't go out.</li>
+          <li><strong>Chasing paperwork.</strong> A reminder at 14 days for an outstanding document, and a payment hold at 30 days when that document affects payment.</li>
+          <li><strong>Keeping one record.</strong> The same payment card on the vendor screen and the invoice screen, and every step logged.</li>
+        </ul>
+      </div>
+      <div class="duties__col">
+        <p class="duties__h">YOUR TEAM HANDLES</p>
+        <ul>
+          <li><strong>The verification call.</strong> Calling a number found independently, never one from the form, invoice or email, and logging the result.</li>
+          <li><strong>Reviewing what the vendor sends.</strong> Accepting or rejecting the documents you asked for.</li>
+          <li><strong>Possible duplicates.</strong> Deciding when a tax ID matches a vendor you already have.</li>
+          <li><strong>Approvals.</strong> Purchases and payments are approved by people, the way they are today.</li>
+        </ul>
+        <p class="duties__note">Those are the steps where a mistake costs money. Everything else runs without anyone having to remember it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="vault wrap wrap--wide" aria-label="Where the bank details live">
+    <p class="eyebrow">WHERE THE BANK DETAILS LIVE</p>
+    <h2 class="section-title">In a payment vault, not in the vendor list.</h2>
+    <div class="vault__grid">
+      <div><h3>Encrypted on arrival</h3><p>Routing and account numbers are encrypted with AES-256 as soon as the vendor submits them, each record locked with its own key.</p></div>
+      <div><h3>Kept apart</h3><p>The vault is built to run as its own database, separate from everything else, with its own access rules. Screens and reports only ever see the last four digits.</p></div>
+      <div><h3>Never overwritten</h3><p>A change creates a new version. You can always see what changed, when, and who confirmed it.</p></div>
+    </div>
+  </section>
+
   <section class="work-why wrap wrap--wide">
     <h2 class="eyebrow">WHY IT MATTERS</h2>
-    <ul class="work-why__list"><li><strong>Payment fraud usually arrives as a routine email.</strong> "We changed banks, please update." The defence is a phone call to a number you found yourself. This makes that call a required step, not a good habit.</li><li><strong>Setup and payment are separate gates.</strong> A new vendor can be tracked and assigned work immediately. Money is the only thing that waits.</li><li><strong>One card, everywhere.</strong> The payment details look the same wherever someone approves, and full account numbers are never shown on screen.</li></ul>
+    <ul class="work-why__list"><li><strong>Payment fraud usually arrives as a routine email.</strong> "We changed banks, please update." The defence is a phone call to a number you found yourself. This makes that call a required step, not a good habit.</li><li><strong>Setup and payment are separate gates.</strong> A new vendor can be tracked and assigned work immediately. Money is the only thing that waits.</li><li><strong>No more re-keying.</strong> Bank details aren't copied from an email into a spreadsheet into the payment system. Every copy is a chance for a typo or a swap.</li><li><strong>One card, everywhere.</strong> The payment details look the same wherever someone approves, and full account numbers are never shown on screen.</li></ul>
   </section>
   <div class="work-steps__head wrap wrap--wide"><h2 class="section-title">The walkthrough</h2></div>
 <p class="work-note wrap wrap--wide"><span class="work-note__tag">SYNTHETIC DATA</span> Captured from the working software running on test data only. The company, the person, the bank and the numbers are made up. The bank name and the link address were edited for publication.</p>
@@ -83,8 +131,8 @@
     <h2 class="eyebrow">WHAT THIS PROVES</h2>
     <p class="work-proof__cap">Payment controls: a vendor can be set up immediately, but nothing is releasable for payment until onboarding is complete and the current bank instructions are verified by phone.</p>
     <div class="work-proof__cols">
-      <div><h3 class="work-proof__h">Built</h3><ul><li>Single-use onboarding links, the vendor form, the security warning, the verification-call log and the locked payment card run in the real software.</li><li>Captured against a test backend with synthetic data only.</li></ul></div>
-      <div><h3 class="work-proof__h">Not yet</h3><ul><li>No real banking data is stored yet. That waits on production-grade key management and real authentication.</li><li>Outbound email and a live payment integration are not built yet.</li></ul></div>
+      <div><h3 class="work-proof__h">Built</h3><ul><li>Single-use onboarding links, the vendor form, the security warning, the verification-call log and the locked payment card run in the real software.</li><li>The encrypted payment vault with versioned bank details, the payment release check, and the 14 and 30-day document follow-ups are built and tested.</li><li>Captured against a test backend with synthetic data only.</li></ul></div>
+      <div><h3 class="work-proof__h">Not yet</h3><ul><li>No real banking data is stored yet. The vault's own separate database, production-grade key management and real sign-in come first.</li><li>Outbound email and a live payment integration are not built yet.</li></ul></div>
     </div>
   </section>
 
