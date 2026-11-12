@@ -1068,3 +1068,63 @@ h1, h2, h3, .section-title, .what__lede, .cta__line { text-wrap: balance; }
 .what .founder-line { max-width: 760px; }
 .tier__action, .fix__go, .demo__go { align-self: flex-start; }
 .chapter--first { padding-top: 32px; }
+
+/* ---------- Three ways to start: the one dark band on the homepage ---------- */
+.offer { background: var(--dark-bg); color: var(--dark-ink); }
+.offer__inner { padding-top: var(--section); padding-bottom: var(--section); }
+.offer__title { color: #F3F0E8; margin-bottom: 16px; }
+.offer__sub { font-size: 17px; line-height: 1.6; color: #B9B2A5; margin: 0 0 56px; max-width: 34em; }
+.offer .tiers { grid-template-columns: repeat(3, 1fr); gap: 20px; border-top: 0; margin: 0; }
+.offer .tier, .offer .tier + .tier {
+  display: flex; flex-direction: column;
+  padding: 32px 30px 30px; border: 1px solid var(--dark-rule); border-left: 1px solid var(--dark-rule);
+  background: rgb(255 255 255 / 0.02);
+  transition: border-color 0.35s ease, background 0.35s ease, transform 0.45s var(--ease);
+}
+.offer .tier:hover { border-color: #6E675C; background: rgb(255 255 255 / 0.045); transform: translateY(-4px); }
+.offer .tier__step { display: flex; align-items: center; gap: 12px; color: var(--dark-muted); margin-bottom: 28px; }
+.offer .tier__no { font-family: var(--serif); font-size: 15px; font-weight: 500; letter-spacing: 0; color: #8C8577; }
+.offer .tier__step::after { content: ""; flex: 1; height: 1px; background: var(--dark-rule); }
+.offer .tier__name { font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 2.3vw, 31px); line-height: 1.1; color: #F3F0E8; margin: 0 0 18px; min-height: 2.2em; }
+.offer .tier__price { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin: 0 0 18px; color: #F3F0E8; font-weight: 400; letter-spacing: 0; }
+.offer .tier__amount { font-family: var(--serif); font-size: clamp(40px, 3.6vw, 52px); font-weight: 500; line-height: 1; }
+.offer .tier__from, .offer .tier__term { font-stretch: 75%; font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dark-muted); }
+.offer .tier__desc { font-size: 15px; line-height: 1.65; color: #C9C2B5; margin: 0 0 32px; flex: 1; }
+.tier__btn {
+  align-self: stretch; display: flex; justify-content: space-between; align-items: center;
+  text-decoration: none; font-stretch: 75%; font-size: 12.5px; font-weight: 700; letter-spacing: 0.16em;
+  color: #F3F0E8; padding: 15px 18px; border: 1px solid #5A544B;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.tier__btn span { transition: transform 0.35s var(--ease); }
+.tier__btn:hover { background: #F3F0E8; color: var(--ink-900); border-color: #F3F0E8; }
+.tier__btn:hover span { transform: translateX(4px); }
+.tier__btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+@media (max-width: 860px) {
+  .offer .tiers { grid-template-columns: 1fr; gap: 16px; }
+  .offer .tier__name { min-height: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .offer .tier:hover { transform: none; } }
+
+/* Offer details: price, terms and deliverables, stated plainly */
+.offer__sub { margin-bottom: 40px; color: #D8D1C4; font-family: var(--serif); font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; }
+.promises { list-style: none; margin: 0 0 56px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; border-top: 1px solid var(--dark-rule); }
+.promises li { padding-top: 16px; font-size: 15px; line-height: 1.55; color: #B9B2A5; }
+.promises strong { display: block; color: #F3F0E8; font-weight: 600; margin-bottom: 2px; }
+.offer .tier__name { min-height: 0; margin-bottom: 22px; }
+.offer .tier__price { margin-bottom: 6px; }
+.offer .tier__per { font-family: var(--serif); font-size: 22px; color: #D8D1C4; }
+.offer .tier__term { font-stretch: 75%; font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dark-muted); margin: 0 0 22px; }
+.offer .tier__desc { flex: 0; margin-bottom: 26px; color: #D8D1C4; }
+.tier__gets-h { font-stretch: 75%; font-size: 11px; font-weight: 700; letter-spacing: 0.22em; color: #8C8577; margin: 0 0 10px; padding-top: 18px; border-top: 1px solid var(--dark-rule); }
+.tier__gets { list-style: none; margin: 0 0 22px; padding: 0; flex: 1; }
+.tier__gets li { position: relative; padding: 0 0 12px 22px; font-size: 14.5px; line-height: 1.55; color: #E4DED3; }
+.tier__gets li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
+.tier__line { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 10px; margin-bottom: 2px; }
+.tier__line b { font-weight: 600; color: #F3F0E8; }
+.tier__line em { font-style: normal; font-weight: 600; color: #F3F0E8; white-space: nowrap; }
+.tier__note { font-size: 13px; line-height: 1.55; color: #9C9588; margin: 0 0 24px; }
+.offer__more { margin: 40px 0 0; font-size: 15px; color: #B9B2A5; }
+.offer__more a { color: #F3F0E8; text-decoration: none; border-bottom: 1px solid #5A544B; padding-bottom: 2px; transition: border-color 0.25s ease; }
+.offer__more a:hover { color: #fff; border-color: #F3F0E8; }
+@media (max-width: 860px) { .promises { grid-template-columns: 1fr; gap: 0; } .promises li { padding: 14px 0; border-bottom: 1px solid var(--dark-rule); } }
