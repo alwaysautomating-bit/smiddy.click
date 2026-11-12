@@ -6,9 +6,12 @@ Blue Dot helps small and mid-sized businesses fix operational problems: invoices
 
 ## Services
 
-- [AI Opportunity Session](https://smiddy.click/#how): fixed $995. The top three opportunities, ranked and written up within 48 hours.
-- [Workflow Sprint](https://smiddy.click/#how): from $4,500, fixed. One workflow fixed in two to four weeks and handed over running.
-- [Fractional AI Implementation Lead](https://smiddy.click/#how): from $5,000 a month. A day a week of hands-on help without a full-time hire.
+Prices are published. Scope and timing are stated up front, and clients can stop after any step.
+
+- [AI Opportunity Session](https://smiddy.click/#how): $995, fixed. One working session to find where AI saves the most time. You get your top three quick wins, ranked, and a short written summary within 48 hours. The fee is credited toward any Sprint booked within 30 days.
+- [Workflow Sprint](https://smiddy.click/#how): from $4,500, fixed. Quick-Win Sprint, $4,500, about 2 weeks: a working prototype you can test plus a handoff session. Workflow Implementation Sprint, $8,500, 3 to 4 weeks: a multi-step workflow with integrations, tested and shipped. Larger scopes are quoted separately.
+- [Fractional AI Implementation Lead](https://smiddy.click/#how): $5,000 a month, about one day a week embedded with the team; includes a quarterly AI policy review. 3-month minimum, then 30 days' notice. AI tool fees are paid directly to vendors.
+- [Other engagements](https://smiddy.click/approach.html#other): AI Use Policy Pack ($1,500, fixed), Fractional AI Officer, and an Enterprise AI Roadmap.
 
 ## Working builds (demos)
 
