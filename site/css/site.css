@@ -1168,3 +1168,65 @@ h1, h2, h3, .section-title, .what__lede, .cta__line { text-wrap: balance; }
   .svc-offer { grid-template-columns: 1fr; gap: 40px; }
   .svc-offer__panel { padding: 32px 24px 28px; }
 }
+
+/* ---------- Build Notes ---------- */
+.notes { padding-top: calc(var(--section) * 0.4); padding-bottom: calc(var(--section) * 0.6); }
+.notes__intro { max-width: 40em; margin: -12px 0 40px; }
+.notes__intro p { font-size: 17px; line-height: 1.75; color: var(--ink-600); margin: 0 0 14px; }
+.notes__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink-850); }
+.notes__list li { border-bottom: 1px solid var(--rule); }
+.note-row { display: grid; grid-template-columns: 76px minmax(0, 1fr) 200px; gap: 8px 28px; align-items: baseline; padding: 28px 0; text-decoration: none; color: inherit; }
+.note-row__no { font-family: var(--serif); font-size: 20px; color: var(--blue); }
+.note-row__main { display: flex; flex-direction: column; gap: 8px; }
+.note-row__title { font-family: var(--serif); font-size: clamp(26px, 2.6vw, 34px); font-weight: 500; line-height: 1.1; color: var(--ink-850); transition: color 0.2s ease; }
+.note-row__dek { font-size: 15.5px; line-height: 1.65; color: var(--ink-600); max-width: 42em; }
+.note-row__from { font-stretch: 75%; font-size: 11.5px; font-weight: 700; letter-spacing: 0.18em; color: var(--ink-450); text-align: right; }
+.note-row:hover .note-row__title { color: var(--ink-900); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 6px; }
+.article-title--note { text-transform: none; letter-spacing: -0.005em; font-size: clamp(40px, 5.4vw, 64px); line-height: 1.05; }
+.article-head .eyebrow a { color: inherit; text-decoration: none; }
+.plate--shot { padding: 0; background: #0B0F16; box-shadow: none; }
+.plate--shot img { display: block; width: 100%; height: auto; }
+.plate--shot figcaption { background: var(--page-bg); padding-top: 14px; }
+.plate--shot-small { background: var(--paper); box-shadow: inset 0 0 0 1px var(--rule); padding: 40px 40px 0; }
+.plate--shot-small img { max-width: 460px; margin: 0 auto 32px; }
+.plate--shot-small figcaption { margin: 0 -40px; padding: 14px 40px 0; }
+.note-links { margin: 48px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.note-links p { font-stretch: 75%; font-size: 11.5px; font-weight: 700; letter-spacing: 0.2em; color: var(--ink-500); margin: 0 0 4px; }
+.article-body .note-links p { font-size: 11.5px; line-height: 1.4; color: var(--ink-500); margin: 0 0 4px; }
+.note-links__a { font-family: var(--serif); font-size: 21px; color: var(--ink-850); text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 2px; transition: border-color 0.25s ease; }
+.note-links__a:hover { color: var(--ink-900); border-color: var(--ink-850); }
+@media (max-width: 720px) {
+  .note-row { grid-template-columns: 1fr; gap: 6px; }
+  .note-row__from { text-align: left; }
+  .plate--shot-small { padding: 24px 18px 0; }
+  .plate--shot-small figcaption { margin: 0 -18px; padding: 14px 18px 0; }
+}
+.article-title--note { max-width: 18ch; margin-left: auto; margin-right: auto; text-wrap: balance; }
+
+/* =====================================================================
+   Performance pass: snappier on large screens
+   - Solid nav: no backdrop blur repainting on every scroll frame.
+   - Hero settles in ~0.6s; no full-screen photo zoom.
+   - Shorter, subtler reveals; content already on screen shows instantly.
+   ===================================================================== */
+.nav { background: var(--nav-bg); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.js .hero .photo img, .js.is-ready .hero .photo img { transform: none; transition: none; }
+.js .hero__title span, .js .hero__sub, .js .hero__caption, .js .hero__scroll {
+  transform: translateY(10px);
+  transition: opacity 0.5s var(--ease), transform 0.6s var(--ease);
+}
+.js.is-ready .hero__title span:nth-child(1) { transition-delay: 0.04s; }
+.js.is-ready .hero__title span:nth-child(2) { transition-delay: 0.1s; }
+.js.is-ready .hero__title span:nth-child(3) { transition-delay: 0.16s; }
+.js.is-ready .hero__sub { transition-delay: 0.26s; }
+.js.is-ready .hero__caption, .js.is-ready .hero__scroll { transition-delay: 0.34s; }
+.js .reveal { transform: translateY(10px); transition: opacity 0.5s var(--ease), transform 0.55s var(--ease); }
+.js .reveal-item { transform: translateY(10px); transition: opacity 0.45s var(--ease), transform 0.5s var(--ease); transition-delay: calc(var(--i, 0) * 50ms); }
+.js .reveal.instant, .js .reveal-item.instant { transition: none !important; }
+.demo__screen img, .step__screen img, .svc-demo__screen img { transition-duration: 0.6s; }
+.js .hero__title span, .js .hero__sub, .js .hero__caption, .js .hero__scroll { transition: opacity 0.45s var(--ease), transform 0.5s var(--ease); }
+.js.is-ready .hero__title span:nth-child(1) { transition-delay: 0s; }
+.js.is-ready .hero__title span:nth-child(2) { transition-delay: 0.06s; }
+.js.is-ready .hero__title span:nth-child(3) { transition-delay: 0.12s; }
+.js.is-ready .hero__sub { transition-delay: 0.2s; }
+.js.is-ready .hero__caption, .js.is-ready .hero__scroll { transition-delay: 0.26s; }

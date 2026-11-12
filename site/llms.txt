@@ -28,7 +28,7 @@ Each demo page lists what is built and what is not yet.
 
 - [Approach](https://smiddy.click/approach.html): how Blue Dot works and what it is not.
 - [The founder journey](https://smiddy.click/founder.html): from wealth management and accounting operations to building the tools.
-- [Journal](https://smiddy.click/journal/index.html): The Texas Address, essays on Texas technology history and practical AI.
+- [Journal](https://smiddy.click/journal/index.html): Build Notes (one decision at a time from builds that run: approval vs. payment, stating gaps instead of filling them, phone verification before payment, reproducible compliance documents) and The Texas Address (Texas technology history).
 
 ## Contact
 
