@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "smiddy.click" }],
+      "destination": "https://bluedotdallas.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.smiddy.click" }],
+      "destination": "https://bluedotdallas.com/:path*",
+      "permanent": true
+    }
+  ]
+}
